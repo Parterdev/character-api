@@ -35,7 +35,7 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
+# development: default port: 3000
 $ npm run start
 
 # watch mode
