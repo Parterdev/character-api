@@ -7,10 +7,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 @Module({
   imports: [
     CharacterModule,
-    //Old: mongodb://localhost/characters-nestjs
-    //MongoDB Cloud: mongodb+srv://test:development12345678@development.j7k4c.mongodb.net/character-nestjs-api?retryWrites=true&w=majority
     MongooseModule.forRoot(
-      'mongodb+srv://test:development12345678@development.j7k4c.mongodb.net/character-nestjs-api?retryWrites=true&w=majority'
+      'mongodb://localhost/characters-nestjs'
     ),
   ],
   controllers: [AppController],
